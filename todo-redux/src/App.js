@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import TodoList from "./components/todo-list/todo-list.component";
+import { useDispatch } from 'react-redux';
+import { AddTodoItem, SetTodoItems } from "./store/todo/todo.action";
 
 const todoItems = [
   {id: 1, title: "todo 1", isDone: false},
@@ -10,6 +13,11 @@ const todoItems = [
 ]
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(SetTodoItems(todoItems));
+  }, [dispatch])
+
   return (
     <TodoList todoItems={todoItems}/>
   );
