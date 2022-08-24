@@ -1,2 +1,2 @@
-# todo-apps
-Make simple todo apps with different technologies
+# Small apps to practice different technologies
+
