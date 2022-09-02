@@ -1,0 +1,35 @@
+.todo-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.content {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: black;
+    color: white;
+    width: 80%;
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.content span {
+    flex: 50%;
+    text-align: center;
+    padding: 10px;
+}
+.content span:nth-child(2) {
+    border-left: 1px solid white;
+}
+
+.todo-task button {
+    padding: 11.5px;
+    background: dodgerblue;
+    border: none;
+    border-top-right-radius: 5px;
+    border-left: 1px solid black;
+    border-bottom-right-radius: 5px;
+    height: 100%;
+}
